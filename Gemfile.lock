@@ -73,6 +73,7 @@ GEM
     coderay (1.1.3)
     concurrent-ruby (1.2.0)
     crass (1.0.6)
+    dante (0.2.0)
     date (3.3.3)
     debug (1.7.1)
       irb (>= 1.5.0)
@@ -107,6 +108,8 @@ GEM
     io-console (0.6.0)
     irb (1.6.2)
       reline (>= 0.3.0)
+    jsonapi-serializer (2.2.0)
+      activesupport (>= 4.2)
     jwt (2.7.0)
     loofah (2.19.1)
       crass (~> 1.0.2)
@@ -121,6 +124,7 @@ GEM
     mini_mime (1.1.2)
     minitest (5.17.0)
     msgpack (1.6.0)
+    multi_json (1.15.0)
     net-imap (0.3.4)
       date
       net-protocol
@@ -180,6 +184,11 @@ GEM
     responders (3.1.0)
       actionpack (>= 5.2)
       railties (>= 5.2)
+    stripe (5.55.0)
+    stripe-ruby-mock (3.0.1)
+      dante (>= 0.2.0)
+      multi_json (~> 1.0)
+      stripe (> 5, < 6)
     thor (1.2.1)
     timeout (0.3.1)
     tzinfo (2.0.6)
@@ -205,11 +214,14 @@ DEPENDENCIES
   devise
   devise-jwt
   dotenv-rails
+  jsonapi-serializer
   pg (~> 1.1)
   pry-rails
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.4, >= 7.0.4.2)
+  stripe
+  stripe-ruby-mock (~> 3.0.1)
   tzinfo-data
 
 RUBY VERSION
